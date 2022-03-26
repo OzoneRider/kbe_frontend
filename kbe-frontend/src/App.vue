@@ -1,22 +1,17 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <router-link to="/" class="navbar-brand">kbe</router-link>
-      <div class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <router-link to="/products" class="nav-link">Products</router-link>
-        </li>
-      </div>
-    </nav>
-    <div class="container mt-3">
-      <router-view />
-    </div>
+    <ProductList />
   </div>
 </template>
 
 <script>
+import ProductList from "./components/ProductList.vue";
+
 export default {
-  name: "app",
+  name: "App",
+  components: {
+    ProductList,
+  },
 };
 </script>
 

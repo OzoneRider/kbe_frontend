@@ -3,8 +3,8 @@ const routes = [
   {
     path: "/",
     alias: "/products",
-    name: "tutorials",
-    component: () => import("./components/ProductList.vue"),
+    name: "products",
+    component: () => import("./components/Products.vue"),
   },
   {
     path: "/products/:id",
