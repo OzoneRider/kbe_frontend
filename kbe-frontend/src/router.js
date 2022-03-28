@@ -4,12 +4,12 @@ const routes = [
     path: "/",
     alias: "/products",
     name: "products",
-    component: () => import("./components/Products.vue"),
+    component: () => import("./components/ProductList.vue"),
   },
   {
     path: "/products/:id",
-    name: "product-information",
-    component: () => import("./components/ProductInformation.vue"),
+    name: "product-details",
+    component: () => import("./components/ProductDetails.vue"),
   },
 ];
 const router = createRouter({
